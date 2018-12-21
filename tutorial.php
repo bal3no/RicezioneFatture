@@ -19,16 +19,16 @@ require_once __DIR__ . '/vendor/autoload.php';
  */
 $options = array(
     \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'RicezioneFatture_v1.0.wsdl',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => ClassMap::get(),
+    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \SDICoop/RicezioneFatture\ClassMap::get(),
 );
 /**
  * Samples for Ricevi ServiceType
  */
-$ricevi = new \ServiceType\Ricevi($options);
+$ricevi = new \SDICoop/RicezioneFatture\ServiceType\Ricevi($options);
 /**
  * Sample call for RiceviFatture operation/method
  */
-if ($ricevi->RiceviFatture(new \StructType\FileSdIConMetadati_Type()) !== false) {
+if ($ricevi->RiceviFatture(new \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type()) !== false) {
     print_r($ricevi->getResult());
 } else {
     print_r($ricevi->getLastError());
@@ -36,11 +36,11 @@ if ($ricevi->RiceviFatture(new \StructType\FileSdIConMetadati_Type()) !== false)
 /**
  * Samples for Notifica ServiceType
  */
-$notifica = new \ServiceType\Notifica($options);
+$notifica = new \SDICoop/RicezioneFatture\ServiceType\Notifica($options);
 /**
  * Sample call for NotificaDecorrenzaTermini operation/method
  */
-if ($notifica->NotificaDecorrenzaTermini(new \StructType\FileSdI_Type()) !== false) {
+if ($notifica->NotificaDecorrenzaTermini(new \SDICoop/RicezioneFatture\StructType\FileSdI_Type()) !== false) {
     print_r($notifica->getResult());
 } else {
     print_r($notifica->getLastError());

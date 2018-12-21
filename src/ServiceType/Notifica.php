@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace SDICoop/RicezioneFatture\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Notifica extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdI_Type $parametersNotifica
+     * @param \SDICoop/RicezioneFatture\StructType\FileSdI_Type $parametersNotifica
      * @return void|bool
      */
-    public function NotificaDecorrenzaTermini(\StructType\FileSdI_Type $parametersNotifica)
+    public function NotificaDecorrenzaTermini(\SDICoop/RicezioneFatture\StructType\FileSdI_Type $parametersNotifica)
     {
         try {
             $this->setResult($this->getSoapClient()->NotificaDecorrenzaTermini($parametersNotifica));

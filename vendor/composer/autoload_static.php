@@ -4,12 +4,16 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6
+class ComposerStaticInit7181f377a06409cd6b5e7b8ef7e4bb10
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
         array (
             'WsdlToPhp\\PackageBase\\' => 22,
+        ),
+        'S' => 
+        array (
+            'SDICoop/RicezioneFatture\\' => 25,
         ),
     );
 
@@ -18,23 +22,13 @@ class ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6
         array (
             0 => __DIR__ . '/..' . '/wsdltophp/packagebase/src',
         ),
-    );
-
-    public static $fallbackDirsPsr4 = array (
-        0 => __DIR__ . '/../..' . '/src',
+        'SDICoop/RicezioneFatture\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $classMap = array (
-        'ClassMap' => __DIR__ . '/../..' . '/src/ClassMap.php',
-        'EnumType\\EsitoNotifica_Type' => __DIR__ . '/../..' . '/src/EnumType/EsitoNotifica_Type.php',
-        'EnumType\\EsitoRicezione_Type' => __DIR__ . '/../..' . '/src/EnumType/EsitoRicezione_Type.php',
-        'ServiceType\\Notifica' => __DIR__ . '/../..' . '/src/ServiceType/Notifica.php',
-        'ServiceType\\Ricevi' => __DIR__ . '/../..' . '/src/ServiceType/Ricevi.php',
-        'StructType\\FileSdIBase_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdIBase_Type.php',
-        'StructType\\FileSdIConMetadati_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdIConMetadati_Type.php',
-        'StructType\\FileSdI_Type' => __DIR__ . '/../..' . '/src/StructType/FileSdI_Type.php',
-        'StructType\\RispostaRiceviFatture_Type' => __DIR__ . '/../..' . '/src/StructType/RispostaRiceviFatture_Type.php',
-        'StructType\\RispostaSdINotificaEsito_Type' => __DIR__ . '/../..' . '/src/StructType/RispostaSdINotificaEsito_Type.php',
         'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
         'WsdlToPhp\\PackageBase\\AbstractStructBase' => __DIR__ . '/..' . '/wsdltophp/packagebase/src/AbstractStructBase.php',
@@ -47,10 +41,9 @@ class ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6::$prefixDirsPsr4;
-            $loader->fallbackDirsPsr4 = ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6::$fallbackDirsPsr4;
-            $loader->classMap = ComposerStaticInit0d0e43967c646386fb94f9cd25c74eb6::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7181f377a06409cd6b5e7b8ef7e4bb10::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7181f377a06409cd6b5e7b8ef7e4bb10::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit7181f377a06409cd6b5e7b8ef7e4bb10::$classMap;
 
         }, null, ClassLoader::class);
     }

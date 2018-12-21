@@ -1,4 +1,7 @@
 <?php
+
+namespace SDICoop/RicezioneFatture;
+
 /**
  * Class which returns the class map definition
  * @package
@@ -13,11 +16,11 @@ class ClassMap
     final public static function get()
     {
         return array(
-            'fileSdIBase_Type' => '\\StructType\\FileSdIBase_Type',
-            'fileSdI_Type' => '\\StructType\\FileSdI_Type',
-            'fileSdIConMetadati_Type' => '\\StructType\\FileSdIConMetadati_Type',
-            'rispostaRiceviFatture_Type' => '\\StructType\\RispostaRiceviFatture_Type',
-            'rispostaSdINotificaEsito_Type' => '\\StructType\\RispostaSdINotificaEsito_Type',
+            'fileSdIBase_Type' => '\\SDICoop/RicezioneFatture\\StructType\\FileSdIBase_Type',
+            'fileSdI_Type' => '\\SDICoop/RicezioneFatture\\StructType\\FileSdI_Type',
+            'fileSdIConMetadati_Type' => '\\SDICoop/RicezioneFatture\\StructType\\FileSdIConMetadati_Type',
+            'rispostaRiceviFatture_Type' => '\\SDICoop/RicezioneFatture\\StructType\\RispostaRiceviFatture_Type',
+            'rispostaSdINotificaEsito_Type' => '\\SDICoop/RicezioneFatture\\StructType\\RispostaSdINotificaEsito_Type',
         );
     }
 }

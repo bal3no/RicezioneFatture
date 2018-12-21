@@ -6,16 +6,6 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ClassMap' => $baseDir . '/src/ClassMap.php',
-    'EnumType\\EsitoNotifica_Type' => $baseDir . '/src/EnumType/EsitoNotifica_Type.php',
-    'EnumType\\EsitoRicezione_Type' => $baseDir . '/src/EnumType/EsitoRicezione_Type.php',
-    'ServiceType\\Notifica' => $baseDir . '/src/ServiceType/Notifica.php',
-    'ServiceType\\Ricevi' => $baseDir . '/src/ServiceType/Ricevi.php',
-    'StructType\\FileSdIBase_Type' => $baseDir . '/src/StructType/FileSdIBase_Type.php',
-    'StructType\\FileSdIConMetadati_Type' => $baseDir . '/src/StructType/FileSdIConMetadati_Type.php',
-    'StructType\\FileSdI_Type' => $baseDir . '/src/StructType/FileSdI_Type.php',
-    'StructType\\RispostaRiceviFatture_Type' => $baseDir . '/src/StructType/RispostaRiceviFatture_Type.php',
-    'StructType\\RispostaSdINotificaEsito_Type' => $baseDir . '/src/StructType/RispostaSdINotificaEsito_Type.php',
     'WsdlToPhp\\PackageBase\\AbstractSoapClientBase' => $vendorDir . '/wsdltophp/packagebase/src/AbstractSoapClientBase.php',
     'WsdlToPhp\\PackageBase\\AbstractStructArrayBase' => $vendorDir . '/wsdltophp/packagebase/src/AbstractStructArrayBase.php',
     'WsdlToPhp\\PackageBase\\AbstractStructBase' => $vendorDir . '/wsdltophp/packagebase/src/AbstractStructBase.php',

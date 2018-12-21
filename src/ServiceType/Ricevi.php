@@ -1,6 +1,6 @@
 <?php
 
-namespace ServiceType;
+namespace SDICoop/RicezioneFatture\ServiceType;
 
 use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
 
@@ -16,10 +16,10 @@ class Ricevi extends AbstractSoapClientBase
      * @uses AbstractSoapClientBase::setResult()
      * @uses AbstractSoapClientBase::getResult()
      * @uses AbstractSoapClientBase::saveLastError()
-     * @param \StructType\FileSdIConMetadati_Type $parametersIn
-     * @return \StructType\RispostaRiceviFatture_Type|bool
+     * @param \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type $parametersIn
+     * @return \SDICoop/RicezioneFatture\StructType\RispostaRiceviFatture_Type|bool
      */
-    public function RiceviFatture(\StructType\FileSdIConMetadati_Type $parametersIn)
+    public function RiceviFatture(\SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type $parametersIn)
     {
         try {
             $this->setResult($this->getSoapClient()->RiceviFatture($parametersIn));
@@ -32,7 +32,7 @@ class Ricevi extends AbstractSoapClientBase
     /**
      * Returns the result
      * @see AbstractSoapClientBase::getResult()
-     * @return \StructType\RispostaRiceviFatture_Type
+     * @return \SDICoop/RicezioneFatture\StructType\RispostaRiceviFatture_Type
      */
     public function getResult()
     {

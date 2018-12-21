@@ -1,6 +1,6 @@
 <?php
 
-namespace StructType;
+namespace SDICoop/RicezioneFatture\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -78,7 +78,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
     /**
      * Set IdentificativoSdI value
      * @param int $identificativoSdI
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public function setIdentificativoSdI($identificativoSdI = null)
     {
@@ -104,7 +104,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
     /**
      * Set NomeFile value
      * @param string $nomeFile
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public function setNomeFile($nomeFile = null)
     {
@@ -130,7 +130,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
     /**
      * Set File value
      * @param string $file
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public function setFile($file = null)
     {
@@ -152,7 +152,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
     /**
      * Set NomeFileMetadati value
      * @param string $nomeFileMetadati
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public function setNomeFileMetadati($nomeFileMetadati = null)
     {
@@ -178,7 +178,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
     /**
      * Set Metadati value
      * @param string $metadati
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public function setMetadati($metadati = null)
     {
@@ -195,7 +195,7 @@ class FileSdIConMetadati_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \StructType\FileSdIConMetadati_Type
+     * @return \SDICoop/RicezioneFatture\StructType\FileSdIConMetadati_Type
      */
     public static function __set_state(array $array)
     {
