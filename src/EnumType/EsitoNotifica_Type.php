@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/RicezioneFatture\EnumType;
+namespace SDICoop\RicezioneFatture\EnumType;
 
 /**
  * This class stands for esitoNotifica_Type EnumType

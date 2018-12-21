@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/RicezioneFatture\StructType;
+namespace SDICoop\RicezioneFatture\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -35,17 +35,17 @@ class RispostaRiceviFatture_Type extends AbstractStructBase
     }
     /**
      * Set Esito value
-     * @uses \SDICoop/RicezioneFatture\EnumType\EsitoRicezione_Type::valueIsValid()
-     * @uses \SDICoop/RicezioneFatture\EnumType\EsitoRicezione_Type::getValidValues()
+     * @uses \SDICoop\RicezioneFatture\EnumType\EsitoRicezione_Type::valueIsValid()
+     * @uses \SDICoop\RicezioneFatture\EnumType\EsitoRicezione_Type::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $esito
-     * @return \SDICoop/RicezioneFatture\StructType\RispostaRiceviFatture_Type
+     * @return \SDICoop\RicezioneFatture\StructType\RispostaRiceviFatture_Type
      */
     public function setEsito($esito = null)
     {
         // validation for constraint: enumeration
-        if (!\SDICoop/RicezioneFatture\EnumType\EsitoRicezione_Type::valueIsValid($esito)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop/RicezioneFatture\EnumType\EsitoRicezione_Type::getValidValues())), __LINE__);
+        if (!\SDICoop\RicezioneFatture\EnumType\EsitoRicezione_Type::valueIsValid($esito)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop\RicezioneFatture\EnumType\EsitoRicezione_Type::getValidValues())), __LINE__);
         }
         $this->Esito = $esito;
         return $this;
@@ -56,7 +56,7 @@ class RispostaRiceviFatture_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \SDICoop/RicezioneFatture\StructType\RispostaRiceviFatture_Type
+     * @return \SDICoop\RicezioneFatture\StructType\RispostaRiceviFatture_Type
      */
     public static function __set_state(array $array)
     {

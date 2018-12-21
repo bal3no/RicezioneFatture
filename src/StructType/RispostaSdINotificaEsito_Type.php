@@ -1,6 +1,6 @@
 <?php
 
-namespace SDICoop/RicezioneFatture\StructType;
+namespace SDICoop\RicezioneFatture\StructType;
 
 use \WsdlToPhp\PackageBase\AbstractStructBase;
 
@@ -20,7 +20,7 @@ class RispostaSdINotificaEsito_Type extends AbstractStructBase
      * Meta informations extracted from the WSDL
      * - maxOccurs: 1
      * - minOccurs: 0
-     * @var \SDICoop/RicezioneFatture\StructType\FileSdIBase_Type
+     * @var \SDICoop\RicezioneFatture\StructType\FileSdIBase_Type
      */
     public $ScartoEsito;
     /**
@@ -28,9 +28,9 @@ class RispostaSdINotificaEsito_Type extends AbstractStructBase
      * @uses RispostaSdINotificaEsito_Type::setEsito()
      * @uses RispostaSdINotificaEsito_Type::setScartoEsito()
      * @param string $esito
-     * @param \SDICoop/RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito
+     * @param \SDICoop\RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito
      */
-    public function __construct($esito = null, \SDICoop/RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito = null)
+    public function __construct($esito = null, \SDICoop\RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito = null)
     {
         $this
             ->setEsito($esito)
@@ -46,24 +46,24 @@ class RispostaSdINotificaEsito_Type extends AbstractStructBase
     }
     /**
      * Set Esito value
-     * @uses \SDICoop/RicezioneFatture\EnumType\EsitoNotifica_Type::valueIsValid()
-     * @uses \SDICoop/RicezioneFatture\EnumType\EsitoNotifica_Type::getValidValues()
+     * @uses \SDICoop\RicezioneFatture\EnumType\EsitoNotifica_Type::valueIsValid()
+     * @uses \SDICoop\RicezioneFatture\EnumType\EsitoNotifica_Type::getValidValues()
      * @throws \InvalidArgumentException
      * @param string $esito
-     * @return \SDICoop/RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
+     * @return \SDICoop\RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
      */
     public function setEsito($esito = null)
     {
         // validation for constraint: enumeration
-        if (!\SDICoop/RicezioneFatture\EnumType\EsitoNotifica_Type::valueIsValid($esito)) {
-            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop/RicezioneFatture\EnumType\EsitoNotifica_Type::getValidValues())), __LINE__);
+        if (!\SDICoop\RicezioneFatture\EnumType\EsitoNotifica_Type::valueIsValid($esito)) {
+            throw new \InvalidArgumentException(sprintf('Value "%s" is invalid, please use one of: %s', $esito, implode(', ', \SDICoop\RicezioneFatture\EnumType\EsitoNotifica_Type::getValidValues())), __LINE__);
         }
         $this->Esito = $esito;
         return $this;
     }
     /**
      * Get ScartoEsito value
-     * @return \SDICoop/RicezioneFatture\StructType\FileSdIBase_Type|null
+     * @return \SDICoop\RicezioneFatture\StructType\FileSdIBase_Type|null
      */
     public function getScartoEsito()
     {
@@ -71,10 +71,10 @@ class RispostaSdINotificaEsito_Type extends AbstractStructBase
     }
     /**
      * Set ScartoEsito value
-     * @param \SDICoop/RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito
-     * @return \SDICoop/RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
+     * @param \SDICoop\RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito
+     * @return \SDICoop\RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
      */
-    public function setScartoEsito(\SDICoop/RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito = null)
+    public function setScartoEsito(\SDICoop\RicezioneFatture\StructType\FileSdIBase_Type $scartoEsito = null)
     {
         $this->ScartoEsito = $scartoEsito;
         return $this;
@@ -85,7 +85,7 @@ class RispostaSdINotificaEsito_Type extends AbstractStructBase
      * @see AbstractStructBase::__set_state()
      * @uses AbstractStructBase::__set_state()
      * @param array $array the exported values
-     * @return \SDICoop/RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
+     * @return \SDICoop\RicezioneFatture\StructType\RispostaSdINotificaEsito_Type
      */
     public static function __set_state(array $array)
     {
